@@ -1,0 +1,506 @@
+:root {
+  --primary-text-color: #212121;
+  --accent-color: #2196f3;
+  --button-active-color: #188CE8;
+  --primary-white: #ffffff;
+  --primary-background: #f5f5f5;
+  --secondary-text-color: #757575;
+  --hero-color: #2f303a;
+  --section2-color: #f5f4fa;
+  --black: #000000;
+  --contacts-color: rgba(255, 255, 255, 0.6);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+img 
+{
+  display: block;
+}
+
+body {
+  background: var(--primary-white);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*::before,
+*::after {
+
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* outline: 2px solid red; */
+}
+
+/*-------HEADER------*/
+
+.header {
+  
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
+}
+
+.header-list {
+  display: flex;
+  gap:50px;
+}
+
+
+.header-container {
+  display: flex;
+  /*width: 1600px;
+  height: 80px; 
+  justify-items: space-between;*/
+  align-items: center;
+}
+
+.header-navigation{
+  display: flex;
+  align-items: center;
+}
+
+.header-links {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+
+
+
+
+
+.header-connect{
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+  /* есть два основных свойства для управления */
+  /* расположения элементов внутри флекса */
+  /* это : justify-content и align-items */
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+/*-----------Hero-------*/
+
+.hero-container {
+  width: 1200px;
+  max-height: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap:30px;
+}
+
+
+/* position: absolute;
+width: 1600px;
+height: 80px;
+left: 0px;
+top: calc(50% - 80px/2 - 1133px);
+
+
+ .header {
+  background-color: var(--primary-white);
+}
+*/
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-right: 215px;
+}
+
+.logo:hover {
+  color: var(--accent-color);
+}
+.webstudio{
+  color: var(--black);
+}
+.web{
+  color: var(--accent-color);
+}
+.webstudio-footer {
+  color: var(--primary-white);
+}
+
+.hero {
+  background-color: var(--hero-color);
+  /* width: 1600px; */
+  height: 600px;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white);
+  text-align: center;
+  
+  margin-right: auto;
+  margin-left: auto;
+}
+.button {
+  color: var(--primary-white);
+  background-color: var(--accent-color);
+  /*
+  
+  font-style: normal;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  position: absolute;
+min-width: 216px;
+height: 50px;
+
+*/
+min-width: 160px;
+  height: 40px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  
+  border: 1px solid #4707f6;
+  width: 216px;
+  height: 50px;
+}
+.button:hover,
+.button:focus {
+  color: var(--primary-white);
+  background-color: var(--button-active-color);
+}
+/*.studio{
+  margin-right: 93px;
+}
+
+.portfol {
+  margin-right: 50px;
+}
+*/
+
+/* .portfolio {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+*/
+/*.contacts {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+*/
+.mail {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--secondary-text-color);
+}
+.phone {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+
+}
+
+.address{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--primary-white);
+
+margin-bottom: 9px;
+
+}
+ul {
+  list-style: none;
+  }
+.link:hover,
+.link:focus, .footer .link:hover, .footer .link:focus {
+  color: var(--accent-color);
+}
+.link {
+    text-decoration: none;
+    font-style: normal;
+    
+}
+ .current {
+  color: var(--accent-color);
+}
+
+.footer .link{
+    color: var(--primary-white);
+}
+
+/*
+.features{
+  background-color: var(--primary-background);
+}
+
+
+}*/
+
+.features-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+  display: flex;
+  gap: 30px;
+
+}
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-text-color);
+}
+
+.features-title-wrap{
+  margin-bottom: 10px ;
+}
+
+.features-wrap{
+  justify-content: center;
+  display:flex;
+  padding-top: 65px;
+  display: flex;
+
+flex-wrap: wrap;
+justify-content: flex-start;
+gap: 9px;
+}
+
+
+.ourteam-items{
+  display:flex;
+  gap:30px;
+  padding-top:50px;
+  padding-bottom: 94px;
+}
+
+.portfolio-text {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+color:var(--secondary-text-color);
+/* margin-bottom: ; */
+}
+/* ------WHAT WE DO------*/
+.whatwedo{
+  display:flex;
+  gap: 30px;
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
+/*--------OUR TEAM------*/
+
+
+.ourteam-wrap {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+  background: #FFFFFF;
+}
+
+/* .ourteam-wrap-title{
+margin-bottom: ;
+}
+.ourteam-wrap-text{
+
+  margin-bottom: ;
+} */
+
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  padding-top: 94px;
+}
+.h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.section-ourteam{
+  background-color: var(--section2-color);
+}
+.team-member{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+.footer {
+  background-color: var(--hero-color);
+  padding: 60px 0px;
+}
+/*.contacts{
+    color: var(--contacts-color);
+    
+}
+*/
+.contacts-footer {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+
+margin-bottom: 9px;
+  }
+.footer .contacts-footer{
+color: var(--contacts-color);
+
+}
+
+.contacts-footer-list li:not(:last-child) {
+  margin-bottom: 9px ;
+}
+
+.logo-footer {
+  margin-bottom: 20px;
+display: inline-block;
+}
+
+/*-----Portfolio----*/
+.button-white {
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.71;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--primary-text-color);
+background-color: var(--section2-color);
+cursor: pointer;
+
+}
+.button-white:hover {
+  color: var(--primary-white);
+  background-color: var(--accent-color);
+}
+.btn-white{
+  display: flex;
+  gap: 8px;
+  margin-top: 94px;
+  justify-content: center;
+}
+.btn-white li button{
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: 0;
+}
+
+.grid-wrapper{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 30px;
+  padding-bottom: 94px;
+grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+.grid-item{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px;
+  gap: 4px;
+  border: 1px solid #EEEEEE;
+}
