@@ -9,6 +9,8 @@
   --section2-color: #f5f4fa;
   --black: #000000;
   --contacts-color: rgba(255, 255, 255, 0.6);
+  --portfolio-border-color: #ECECEC;
+  --portfolio-border-color:#EEEEEE;
 }
 
 p,
@@ -28,6 +30,9 @@ ol {
 }
 button {
   cursor: pointer;
+  
+  border: none;
+  border-radius:4px;
 }
 address {
   font-style: normal;
@@ -35,6 +40,9 @@ address {
 img 
 {
   display: block;
+  max-width: 100%;
+  height: auto;
+
 }
 
 body {
@@ -74,18 +82,15 @@ html {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid red; */
+ 
 }
 
 /*-------HEADER------*/
 
-.header {
-  
-  padding-top: 32px;
-  padding-bottom: 32px;
-  
+/*.header {
+   
 }
-
+*/
 .header-list {
   display: flex;
   gap:50px;
@@ -106,65 +111,32 @@ html {
 }
 
 .header-links {
-  font-style: normal;
+  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  color: var(--primary-text-color);
+  display: block;
+  padding: 32px 0;
 }
-
-
-
 
 
 .header-connect{
   display: flex;
   gap: 50px;
   margin-left: auto;
-  /* есть два основных свойства для управления */
-  /* расположения элементов внутри флекса */
-  /* это : justify-content и align-items */
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-}
+  align-items: center;
+ }
 
 /*-----------Hero-------*/
 
-.hero-container {
-  width: 1200px;
-  max-height: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  gap:30px;
-}
-
-
-/* position: absolute;
-width: 1600px;
-height: 80px;
-left: 0px;
-top: calc(50% - 80px/2 - 1133px);
-
-
- .header {
-  background-color: var(--primary-white);
-}
-*/
 .logo {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-right: 215px;
+  margin-right: 93px;
 }
 
 .logo:hover {
@@ -182,8 +154,10 @@ top: calc(50% - 80px/2 - 1133px);
 
 .hero {
   background-color: var(--hero-color);
-  /* width: 1600px; */
-  height: 600px;
+  /* width: 1600px; 
+  height: 600px;*/
+  padding: 200px 0;
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
@@ -193,46 +167,26 @@ top: calc(50% - 80px/2 - 1133px);
   text-transform: uppercase;
   color: var(--primary-white);
   text-align: center;
-  
   margin-right: auto;
   margin-left: auto;
+  width:696px;
+  margin-bottom: 30px;
 }
 .button {
   color: var(--primary-white);
   background-color: var(--accent-color);
-  /*
-  
-  font-style: normal;
-  font-weight: 700;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  
-  padding-top: 30px;
-  padding-bottom: 20px;
-
-  position: absolute;
-min-width: 216px;
-height: 50px;
-
-*/
-min-width: 160px;
-  height: 40px;
+   min-width: 216px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  border: none;
+  /* height: 50px; */
+  padding: 10px 32px;
   
-  border: 1px solid #4707f6;
-  width: 216px;
-  height: 50px;
 }
+
 .button:hover,
 .button:focus {
   color: var(--primary-white);
@@ -314,25 +268,19 @@ ul {
     color: var(--primary-white);
 }
 
-/*
-.features{
-  background-color: var(--primary-background);
+
+/*----------ABOUT--------*/
+.about{
+  padding-top: 94px;
 }
 
-
-}*/
-
 .features-list {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: var(--secondary-text-color);
+  
   display: flex;
   gap: 30px;
 
 }
+
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -346,7 +294,7 @@ ul {
 .features-title-wrap{
   margin-bottom: 10px ;
 }
-
+/*
 .features-wrap{
   justify-content: center;
   display:flex;
@@ -358,48 +306,50 @@ justify-content: flex-start;
 gap: 9px;
 }
 
-
+*/
 .ourteam-items{
   display:flex;
   gap:30px;
   padding-top:50px;
-  padding-bottom: 94px;
+  margin-bottom: 94px;
 }
 
 .portfolio-text {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.88;
-letter-spacing: 0.03em;
+
+line-height: 1.71;
 color:var(--secondary-text-color);
-/* margin-bottom: ; */
+padding-bottom: 10px;
+ 
+  
 }
 /* ------WHAT WE DO------*/
 .whatwedo{
   display:flex;
   gap: 30px;
   padding-top: 50px;
-  padding-bottom: 94px;
+  margin:50px;
 }
-
-/*--------OUR TEAM------*/
-
+.whatwedo-section{
+  padding: 94px;
+}
 
 .ourteam-wrap {
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  background: #FFFFFF;
+  
 }
 
-/* .ourteam-wrap-title{
-margin-bottom: ;
+.ourteam-text{
+
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--secondary-text-color);
+
+
 }
-.ourteam-wrap-text{
-
-  margin-bottom: ;
-} */
-
 
 .section-title {
   font-weight: 700;
@@ -408,7 +358,7 @@ margin-bottom: ;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  padding-top: 94px;
+  
 }
 .h3 {
   font-weight: 500;
@@ -416,14 +366,29 @@ margin-bottom: ;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 10px;
 }
+.h3-portfolio{
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+margin-bottom: 10px;
+color: var(--primary-text-color);
+}
+
+
 .section-ourteam{
   background-color: var(--section2-color);
+  padding:94px 0;
 }
+
 .team-member{
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+background-color: var(--primary-white);;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
 .footer {
@@ -440,16 +405,16 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-
 margin-bottom: 9px;
   }
+
 .footer .contacts-footer{
 color: var(--contacts-color);
 
 }
 
 .contacts-footer-list li:not(:last-child) {
-  margin-bottom: 9px ;
+  margin-bottom: 9px;
 }
 
 .logo-footer {
@@ -458,6 +423,24 @@ display: inline-block;
 }
 
 /*-----Portfolio----*/
+
+.header-portfolio{
+  border: 1px solid var(--portfolio-border-color);
+}
+
+.portfolio-wrap-text{
+  
+font-weight: 400;
+font-size: 16px;
+line-height: 1.88;
+
+color: var(--secondary-text-color);
+}
+
+.style{
+
+  padding: 94px 0;
+}
 .button-white {
 font-family: inherit;
 font-weight: 500;
@@ -477,7 +460,6 @@ cursor: pointer;
 .btn-white{
   display: flex;
   gap: 8px;
-  margin-top: 94px;
   justify-content: center;
 }
 .btn-white li button{
@@ -487,20 +469,19 @@ cursor: pointer;
 }
 
 .grid-wrapper{
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(3, 370px);
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  
   justify-content: center;
   column-gap: 30px;
-  row-gap: 30px;
-  padding-bottom: 94px;
-grid-template-rows: repeat(3, minmax(0, 1fr));
+  row-gap:30px;
+
 }
 
 .grid-item{
-  display: flex;
-  flex-direction: column;
+
   padding: 20px 24px;
-  gap: 4px;
-  border: 1px solid #EEEEEE;
-}
+  border: 1px solid var(--portfolio-border-color);
+
+  }
