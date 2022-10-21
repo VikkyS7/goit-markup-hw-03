@@ -9,8 +9,6 @@
   --section2-color: #f5f4fa;
   --black: #000000;
   --contacts-color: rgba(255, 255, 255, 0.6);
-  --portfolio-border-color: #ECECEC;
-  --portfolio-border-color:#EEEEEE;
 }
 
 p,
@@ -87,8 +85,11 @@ html {
 
 /*-------HEADER------*/
 
-/*.header {
-   
+.header {
+  
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
 }
 */
 .header-list {
@@ -154,10 +155,8 @@ html {
 
 .hero {
   background-color: var(--hero-color);
-  /* width: 1600px; 
-  height: 600px;*/
-  padding: 200px 0;
-  text-align: center;
+  /* width: 1600px; */
+  height: 600px;
 }
 .hero-title {
   font-weight: 900;
@@ -318,9 +317,7 @@ gap: 9px;
 
 line-height: 1.71;
 color:var(--secondary-text-color);
-padding-bottom: 10px;
- 
-  
+/* margin-bottom: ; */
 }
 /* ------WHAT WE DO------*/
 .whatwedo{
@@ -392,6 +389,56 @@ background-color: var(--primary-white);;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
+
+.team-soc-link{
+
+width: 100%;
+height: 100%;
+background: tomato;
+border-radius: 50%;
+display: block;
+}
+.team-soc-item{
+
+  width: 44px;
+  height: 44px;
+}
+
+.team-soc-list{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+} 
+.link-soc{
+
+}
+.list-soc{}
+
+/*-------OUR CLIENTS-----*/
+
+.client-list {
+  display:flex;
+  gap: 30px;
+  margin: 94px;
+}
+
+.client-item {
+  width: calc((100% - 150px) / 6);
+  height: 90px;
+
+}
+.client-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  display:block;
+
+}
+
+
+/*-------FOOTER-------*/
+
 .footer {
   background-color: var(--hero-color);
   padding: 60px 0px;
